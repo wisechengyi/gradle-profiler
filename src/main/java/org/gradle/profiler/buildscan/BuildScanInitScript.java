@@ -34,6 +34,9 @@ public class BuildScanInitScript extends GeneratedInitScript {
         writer.write("      maven {\n");
         writer.write("          url \"https://plugins.gradle.org/m2\"\n");
         writer.write("        }\n");
+        writer.write("      maven {\n");
+        writer.write("          url \"https://artifactory.twitter.biz/java/virtual\"\n");
+        writer.write("        }\n");
         writer.write("    }\n");
         writer.write("    dependencies {\n");
         writer.write("        classpath \"com.gradle:build-scan-plugin:" + version + "\"\n");
